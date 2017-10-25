@@ -16,7 +16,13 @@ class KeycloakProviderConfigurator implements ProviderConfiguratorInterface
 {
     public function buildConfiguration(NodeBuilder $node)
     {
-        // no custom options
+        $node
+            ->scalarNode('server_url')
+            ->defaultNull()
+            ->end()
+            ->scalarNode('realm')
+            ->defaultNull()
+            ->end();
     }
 
     public function getProviderClass(array $config)
