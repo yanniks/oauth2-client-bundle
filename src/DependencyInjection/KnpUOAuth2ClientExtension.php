@@ -25,6 +25,7 @@ use KnpU\OAuth2ClientBundle\DependencyInjection\Providers\GitlabProviderConfigur
 use KnpU\OAuth2ClientBundle\DependencyInjection\Providers\GoogleProviderConfigurator;
 use KnpU\OAuth2ClientBundle\DependencyInjection\Providers\HeadHunterProviderConfigurator;
 use KnpU\OAuth2ClientBundle\DependencyInjection\Providers\InstagramProviderConfigurator;
+use KnpU\OAuth2ClientBundle\DependencyInjection\Providers\KeycloakProviderConfigurator;
 use KnpU\OAuth2ClientBundle\DependencyInjection\Providers\LinkedInProviderConfigurator;
 use KnpU\OAuth2ClientBundle\DependencyInjection\Providers\MicrosoftProviderConfigurator;
 use KnpU\OAuth2ClientBundle\DependencyInjection\Providers\OdnoklassnikiProviderConfigurator;
@@ -72,6 +73,7 @@ class KnpUOAuth2ClientExtension extends Extension
         'github' => GithubProviderConfigurator::class,
         'gitlab' => GitlabProviderConfigurator::class,
         'google' => GoogleProviderConfigurator::class,
+        'keycloak' => KeycloakProviderConfigurator::class,
         'linkedin' => LinkedInProviderConfigurator::class,
         'microsoft' => MicrosoftProviderConfigurator::class,
         'odnoklassniki' => OdnoklassnikiProviderConfigurator::class,
